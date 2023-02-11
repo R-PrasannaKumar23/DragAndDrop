@@ -1,1 +1,483 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="/DragAndDrop/images/my-profile.svg"/><link rel="manifest" href="/DragAndDrop/manifest.json"/><script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script><title>Drag and Drop</title><script defer="defer" src="/DragAndDrop/static/js/main.b3492390.js"></script><link href="/DragAndDrop/static/css/main.74ca3a23.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.5/flickity.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-custom navbar-mainbg py-0 w-100">
+        <a class="navbar-brand navbar-logo w-25 py-0" href="#">
+            <img src="./images/logo.png" alt="INDUS-LOGO" class="img-fluid" />
+        </a>
+        <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" class="icons">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+            </svg>
+        </button>
+        <div class="collapse navbar-collapse justify-content-md-end" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <div><div class="left"></div><div class="right"></div></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0);"><i class="fas fa-tachometer-alt"></i>HOME</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="javascript:void(0);"><i class="far fa-address-book"></i>JOBS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0);"><i class="far fa-clone"></i>SERVICES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0);"><i class="far fa-calendar-alt"></i>INDUSTRIES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0);"><i class="far fa-chart-bar"></i>ABOUT US</a>
+                </li>
+                <li class="nav-item border-right">
+                    <a class="nav-link" href="javascript:void(0);"><i class="far fa-copy"></i>CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid px-0">
+        <div class="row m-0">
+            <div class="hero-slider px-0" data-carousel>
+                <div class="carousel-cell" style="background-image:url(https://78.media.tumblr.com/469798be38e86cc01ea4ba08563af785/tumblr_p38kazKBIX1snegd3o1_1280.jpg);">
+                  <div class="overlay"></div>
+                  <div class="slide-content">
+                    <div class="mask">
+                      <h2 class="title">Welcome to INDUS-GROUP</h2>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="mask">
+                      <p class="caption">We provide best service with budget friendly and on time service to our clients and systematically meet their expectations.</p>
+                      <a href="https://flickity.metafizzy.co/" target="_blank" class="btn">KNOW MORE</a>
+                    </div>
+                   </div>
+                </div>
+                <div class="carousel-cell" style="background-image:url(https://78.media.tumblr.com/f3577e640674f66119dad5ce61b4582c/tumblr_ozf8vw9LYN1snegd3o1_1280.jpg);">
+                  <div class="overlay"></div>
+                  <div class="slide-content">
+                    <div class="mask">
+                      <h2 class="title">Slide 2</h2>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="mask">
+                      <p class="caption">Flickity is flexible.</p>
+                      <a href="https://flickity.metafizzy.co/" target="_blank" class="btn">Know more</a>
+                    </div>
+                   </div>
+                </div>
+                <div class="carousel-cell" style="background-image:url(https://78.media.tumblr.com/895918f98ebb3644e885f663bf63ba61/tumblr_pa4fmzV4kV1snegd3o1_1280.jpg);">
+                  <div class="overlay"></div>
+                  <div class="slide-content">
+                    <div class="mask">
+                      <h2 class="title">Slide 3</h2>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="mask">
+                      <p class="caption">Flickity is awesome.</p>
+                      <a href="https://flickity.metafizzy.co/" target="_blank" class="btn">Know more</a>
+                    </div>
+                   </div>
+                </div>
+              </div>
+        </div>
+      
+        <div class="row m-0 px-2 px-md-5">
+            <div class="col-12 text-center mt-4" data-aos="fade-up">
+                <h2 class="f-20 textPrimary">SOLVE BUSINESS CHALLENGES WITH INNOVATIVE TECHNOLOGIES</h2>
+            </div>
+            <div class="col-12 mt-2 mb-5" data-aos="fade-up">
+                <span class="textSecondary">We delivers highly qualified software engineering and agile team staffing solutions that help your businesses be more successful tomorrow.</span>
+            </div>
+            <div class="col-6 my-3" data-aos="fade-up">
+                <h4 class="f-20 mb-4 textTheme">IT SERVICES</h4>
+                <p class="d-flex">
+                    <img src="./images/icons/service-mark.svg" alt="" class="img-fluid">
+                    <span class="px-3 ">Optimising the performance and scalability of your information infrastructure.</span>
+                </p>
+            </div>
+            <div class="col-6 my-3" data-aos="fade-up">
+                <h4 class="f-20 mb-4 textTheme">IT TALENT MANAGEMENT</h4>
+                <p class="d-flex">
+                    <img src="./images/icons/management.svg" alt="" class="img-fluid">
+                    <span class="px-3 ">Retaining talent with extensive domain expertise across all IT disciplines.</span>
+                </p>
+            </div>
+            <div class="col-6 my-3" data-aos="fade-up">
+                <h4 class="f-20 mb-4 textTheme">IT DEVELOPMENT</h4>
+                <p class="d-flex">
+                    <img src="./images/icons/Development.svg" alt="" class="img-fluid">
+                    <span class="px-3 ">Retaining talent with extensive domain expertise across all IT disciplines.</span>
+                </p>
+            </div>
+        </div>
+        <div class="setArrow">
+
+        </div>
+        <div class="row px-2 px-md-5 setService">
+            <div class="col-12 text-center mt-4">
+                <h2 class="f-20 textPrimary">CONNECTING PEOPLE AND DELIVERING RESULTS CONSISTENTLY</h2>
+            </div>
+            <div class="col-12 mt-2 mb-5 d-flex justify-content-center">
+                <span class="text-white w-75 d-block text-center">Indus group provides clients the consulting, engineering and talent resource solution necessary to tackle the challenges with changing environment in the technology industry.</span>
+            </div>
+            <div class="col-12 col-md-4 p-3 mb-3" data-aos="fade-left" data-aos-easing="ease-in-out">
+                <div class="rounded-2 border services w-100 p-3 bg-white shadow-sm">
+                    <div class="w-100 d-flex justify-content-center align-items-center">
+                        <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke="none" stroke-width="0" fill="#82b533" d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"></path>
+                          </svg>
+                        <img src="./images/icons/laptop.svg" alt="software" class="fluid position-absolute">
+                    </div>
+                    <div class="w-100 text-center">
+                        <h4 class="f-16 my-3">SOFTWARE AND APPLICATION DEVELOPMENT</h4>
+                        <p>We have a magnificent group of specialists, who understands your business requirements and to find a software solution.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 p-3 mb-3" data-aos="zoom-in" data-aos-easing="ease-in-out">
+                <div class="rounded-2 border services w-100 p-3 bg-white shadow-sm">
+                    <div class="w-100 d-flex justify-content-center align-items-center">
+                        <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke="none" stroke-width="0" fill="#82b533" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
+                        </svg>
+                        <img src="./images/icons/settings.svg" alt="engineering" class="fluid position-absolute">
+                    </div>
+                    <div class="w-100 text-center">
+                        <h4 class="f-16 my-3">ENGINEERING SERVICES</h4>
+                        <p>Indus Group strives to ensure that its employees also demonstrate high commitment levels.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 p-3 mb-3" data-aos="fade-right" data-aos-easing="ease-in-out">
+                <div class="rounded-2 border services w-100 p-3 bg-white shadow-sm">
+                    <div class="w-100 d-flex justify-content-center align-items-center">
+                        <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke="none" stroke-width="0" fill="#82b533" d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"></path>
+                        </svg>
+                        <img src="./images/icons/cloud-computing.svg" alt="layer" class="fluid icons position-absolute">
+                    </div>
+                    <div class="w-100 text-center">
+                        <h4 class="f-16 my-3">CLOUD COMPUTING SERVICES</h4>
+                        <p>Utilize cloud computing services to address a variety of application and infrastructure.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 p-3 mb-3" data-aos="fade-left" data-aos-easing="ease-in-out">
+                <div class="rounded-2 border services w-100 p-3 bg-white shadow-sm">
+                    <div class="w-100 d-flex justify-content-center align-items-center">
+                        <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke="none" stroke-width="0" fill="#82b533" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
+                        </svg>
+                        <img src="./images/icons/tick.svg" alt="entrprise" class="fluid position-absolute">
+                    </div>
+                    <div class="w-100 text-center">
+                        <h4 class="f-16 my-3">ENTERPRISE SUPPORT</h4>
+                        <p>Our specialists in the Careers and Business Relations division are here to help with fitted business and start-up guidance.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 p-3 mb-3" data-aos="zoom-in" data-aos-easing="ease-in-out">
+                <div class="rounded-2 border services w-100 p-3 bg-white shadow-sm">
+                    <div class="w-100 d-flex justify-content-center align-items-center">
+                        <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke="none" stroke-width="0" fill="#82b533" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
+                        </svg>
+                        <img src="./images/icons/globe.svg" alt="entrprise" class="fluid position-absolute">
+                    </div>
+                    <div class="w-100 text-center">
+                        <h4 class="f-16 my-3">SALESFORCE CONSULTING SERVICES</h4>
+                        <p>We have strong man power support supply in Salesforce’s applications, We assist you with joining new executions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 p-3 mb-3" data-aos="fade-right" data-aos-easing="ease-in-out">
+                <div class="rounded-2 border services w-100 p-3 bg-white shadow-sm">
+                    <div class="w-100 d-flex justify-content-center align-items-center">
+                        <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke="none" stroke-width="0" fill="#82b533" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
+                        </svg>
+                        <img src="./images/icons/digital.svg" alt="entrprise" class="fluid position-absolute">
+                    </div>
+                    <div class="w-100 text-center">
+                        <h4 class="f-16 my-3">DIGITAL SERVICES</h4>
+                        <p>Our digital services can play a critical role in ensuring the overall success of your service goals.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 p-3 mb-3" data-aos="fade-left" data-aos-easing="ease-in-out">
+                <div class="rounded-2 border services w-100 p-3 bg-white shadow-sm">
+                    <div class="w-100 d-flex justify-content-center align-items-center">
+                        <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke="none" stroke-width="0" fill="#82b533" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
+                        </svg>
+                        <img src="./images/icons/sitemap.svg" alt="entrprise" class="fluid position-absolute">
+                    </div>
+                    <div class="w-100 text-center">
+                        <h4 class="f-16 my-3">INFRASTRUCTURE SERVICES</h4>
+                        <p>We provide you the best infrastructure service with the optimized designs for the better outcomes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 p-3 mb-3" data-aos="zoom-in" data-aos-easing="ease-in-out">
+                <div class="rounded-2 border services w-100 p-3 bg-white shadow-sm">
+                    <div class="w-100 d-flex justify-content-center align-items-center">
+                        <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke="none" stroke-width="0" fill="#82b533" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
+                        </svg>
+                        <img src="./images/icons/dev-training.svg" alt="entrprise" class="fluid position-absolute">
+                    </div>
+                    <div class="w-100 text-center">
+                        <h4 class="f-16 my-3">IT TRAINING & DEVELOPMENT</h4>
+                        <p>We implement our processes to offer a cost-effective staffing solutions to our clients.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row m-0 my-5">
+            <h3 class="textPrimary text-center mt-4 mb-5">OUR PROUD CLIENTS</h3>
+            <div class="col-12 my-4">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                      <h2 class="px-4"><img src="./images/logo.png"></h2>
+                    </div>
+                    <div class="item">
+                        <h2 class="px-4"><img src="./images/logo.png"></h2>
+                    </div>
+                    <div class="item">
+                        <h2 class="px-4"><img src="./images/logo.png"></h2>
+                    </div>
+                    <div class="item">
+                        <h2 class="px-4"><img src="./images/logo.png"></h2>
+                    </div>
+                    <div class="item">
+                        <h2 class="px-4"><img src="./images/logo.png"></h2>
+                    </div>
+                    <div class="item">
+                        <h2 class="px-4"><img src="./images/logo.png"></h2>
+                    </div>
+                    <div class="item">
+                        <h2 class="px-4"><img src="./images/logo.png"></h2>
+                    </div>
+                    <div class="item">
+                        <h2 class="px-4"><img src="./images/logo.png"></h2>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <!--MISSION AND VISION-->
+        <div class="row rowMission mt-4 d-none">
+            <div class="col-xl-12 text-center">
+                <h3 class="f-20">VALUE PROPOSITION</h3>
+            </div>
+            <div class="col-xl-12">
+                <ul class="list-unstyled">
+                    <li class="my-3">
+                        <img src="./images/icons/tick.svg" alt=""/>
+                        <span class="px-3">Speed of delivery blended onsite/ offshore advantage</span>
+                    </li>
+                    <li class="my-3">
+                        <img src="./images/icons/tick.svg" alt=""/>
+                        <span class="px-3">Low cost advantage</span>
+                    </li>
+                    <li class="my-3">
+                        <img src="./images/icons/tick.svg" alt=""/>
+                        <span class="px-3">Rapid project team mobilization</span>
+                    </li>
+                    <li class="my-3">
+                        <img src="./images/icons/tick.svg" alt=""/>
+                        <span class="px-3">Low attrition rates</span>
+                    </li>
+                    <li class="my-3">
+                        <img src="./images/icons/tick.svg" alt=""/>
+                        <span class="px-3">Dedicated state of the art offshore development infrastructure</span>
+                    </li>
+                    <li class="my-3">
+                        <img src="./images/icons/tick.svg" alt=""/>
+                        <span class="px-3">Dedicated state of the art offshore support setups</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-6 mt-4">
+                <h3 class="f-20">MISSION</h3>
+                <div class="step step-active mt-4">
+                    <div>
+                    <div class="circle"><i class="fa fa-check"></i></div>
+                    </div>
+                    <div>
+                    <div class="title f-20"></div>
+                    <div class="caption">To develop state-of-the-art solutions aimed to address industry requisites</div>
+                    </div>
+                </div>
+                <div class="step step-active">
+                    <div>
+                    <div class="circle"></div>
+                    </div>
+                    <div>
+                    <div class="title"></div>
+                    <div class="caption">To follow the organization's key principles being exclusively customer oriented and quality focused.</div>
+                    </div>
+                </div>
+                <div class="step step-active">
+                    <div>
+                    <div class="circle"></div>
+                    </div>
+                    <div>
+                    <div class="title"></div>
+                    <div class="caption">To constantly strive to achieve excellence and continuous business improvement.</div>
+                    </div>
+                </div>
+                <div class="step step-active">
+                    <div>
+                    <div class="circle"></div>
+                    </div>
+                    <div>
+                    <div class="title"></div>
+                    <div class="caption">To be a people centric organization with emphasis on leadership values.</div>
+                    </div>
+                </div>
+                <div class="step step-active">
+                    <div>
+                    <div class="circle"></div>
+                    </div>
+                    <div>
+                    <div class="title"></div>
+                    <div class="caption">To provide unmatched benefits extended to employees.</div>
+                    </div>
+                </div>
+                <div class="step step-active">
+                    <div>
+                    <div class="circle"></div>
+                    </div>
+                    <div>
+                    <div class="title"></div>
+                    <div class="caption">To maintain an encouraging employee culture, boosting team spirit and rewarding outstanding performers.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mt-4">
+                <h3 class="f-20">VISION</h3>
+                <div class="step step-active mt-4">
+                    <div>
+                    <div class="circle"><i class="fa fa-check"></i></div>
+                    </div>
+                    <div>
+                    <div class="title f-20"></div>
+                    <div class="caption">To deliver market-leading Information Technology services at standard quality and value.</div>
+                    </div>
+                </div>
+                <div class="step step-active">
+                    <div>
+                    <div class="circle"></div>
+                    </div>
+                    <div>
+                    <div class="title"></div>
+                    <div class="caption">To provide value and expert advice primarily to retain strong business relationship.</div>
+                    </div>
+                </div>
+                <div class="step step-active">
+                    <div>
+                    <div class="circle"></div>
+                    </div>
+                    <div>
+                    <div class="title"></div>
+                    <div class="caption">To maintain transparent employee communications. Certifying the employees work with integrity, respect and adhering to ethics framed by the organization.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="row p-lg-4">
+            <div class="col-lg-3">
+                <img src="./images/logo.png" class="img-fluid" />
+                <p class="text-white f-10">Copyrights © 2018 All Rights Reserved by Indus Group Inc.</p>
+            </div>
+            <div class="col-lg-3 px-5">
+                <h4 class="text-white f-16">Services</h4>
+                <ul class="px-0 list-unstyled">
+                    <li><a class="text-white f-12 text-decoration-none" href="#">IT SERVICES</a></li>
+                    <li><a class="text-white f-12 text-decoration-none" href="#">IT TALENT MANAGEMENT</a></li>
+                    <li><a class="text-white f-12 text-decoration-none" href="#">IT DEVELOPMENT</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <h4 class="text-white f-16">Services</h4>
+                <ul class="px-0 list-unstyled">
+                    <li><a class="text-white f-12 text-decoration-none" href="#">IT SERVICES</a></li>
+                    <li><a class="text-white f-12 text-decoration-none" href="#">IT TALENT MANAGEMENT</a></li>
+                    <li><a class="text-white f-12 text-decoration-none" href="#">IT DEVELOPMENT</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <h4 class="text-white f-16">CONNECT WITH US</h4>
+                <div class="w-100 mt-3 d-flex justify-content-between align-items-center">
+                    <img src="./images/icons/mail.svg" class="img-fluid" />
+                    <img src="./images/icons/facebook.svg" class="img-fluid" />
+                    <img src="./images/icons/instagram.svg" class="img-fluid" />
+                    <img src="./images/icons/twitter.svg" class="img-fluid" />
+                    <img src="./images/icons/linked-in.svg" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        
+       
+
+        
+                    AOS.init();
+                    AOS.init({
+                // Global settings:
+                disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+                startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+                initClassName: 'aos-init', // class applied after initialization
+                animatedClassName: 'aos-animate', // class applied on animation
+                useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+                disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+                debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+                throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+                
+            
+                // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+                offset: 120, // offset (in px) from the original trigger point
+                delay: 0, // values from 0 to 3000, with step 50ms
+                duration: 400, // values from 0 to 3000, with step 50ms
+                easing: 'ease', // default easing for AOS animations
+                once: false, // whether animation should happen only once - while scrolling down
+                mirror: false, // whether elements should animate out while scrolling past them
+                anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+            
+            });
+      
+            $(function() {
+                var owl = $(".owl-carousel");
+                owl.owlCarousel({
+                    items: 3,
+                    margin: 10,
+                    loop: true,
+                    nav: true
+                });
+                });
+
+    </script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.1.0/flickity.pkgd.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</body>
+
+</html>
