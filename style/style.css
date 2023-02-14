@@ -68,7 +68,7 @@ ABOUT / TEAM MEMBERS
 --------
 SECTIONS
 --------
-     WHYTERA / .why-tera
+     WHYTERA / .why-ind
      DOMAIN SEARCH / .search-bar
      HOSTING PARTS / .hosting-parts
      DF-MEDIA / df-media1 & 2
@@ -118,7 +118,9 @@ body h3 {
     font-weight: 800;
     font-size: 28px;
 }
-
+.typewrite .wrap {
+    font-size: 18px;
+}
 body h2,
 body h3,
 body h4 {
@@ -378,11 +380,24 @@ body .f7-bg {
     margin-bottom: 15px;
     margin-left: 50px;
 }
-
+.textPrimary {
+    color: #f5633e;
+}
 .text-left {
     text-align: left;
 }
-
+.fontBold {
+    font-weight: bold !important;
+}
+.mr-5 {
+    margin-right: 5px;
+}
+.mr-12 {
+    margin-right: 12px !important;
+}
+.ml-5 {
+    margin-left: 5px;
+}
 body .gray-bg {
     background-color: #f7f7f7;
 }
@@ -617,7 +632,6 @@ ul {
 .megamenu-fw .dedicated {
     background-color: #f5f5f5;
     padding: 20px 15px;
-    width:
 }
 
 .megamenu-fw img {
@@ -895,46 +909,49 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
     left: auto;
 }
 
-/* why-tera */
+/* why-ind */
 
-.why-tera {
+.why-ind {
     padding-top: 10px;
     padding-bottom: 50px;
     background-color: #fff;
 }
 
-.why-tera .default-title {
+.why-ind .default-title {
     padding: 20px 0;
 }
 
-.why-tera .wt-1::before {
+.why-ind .wt-1::before {
     content: "\f1ad";
     font-family: FontAwesome;
     padding-right: 5px;
     color: #f5633e;
 }
 
-.why-tera .wt-2::before {
+.why-ind .wt-2::before {
     content: "\f233";
     font-family: FontAwesome;
     padding-right: 5px;
     color: #f5633e;
 }
 
-.why-tera .wt-3::before {
+.why-ind .wt-3::before {
     content: "\f219";
     font-family: FontAwesome;
     padding-right: 5px;
     color: #f5633e;
 }
 
-.why-tera .box {
+.why-ind .box {
     margin: 15px;
     border-radius: 20px;
     padding: 20px;
     box-shadow: 0 0px 45px rgba(0, 0, 0, 0.07);
     transition: 200ms ease-in-out;
     border: 1px solid #f0f0f0;
+    min-height: 230px;
+    max-height: 230px;
+    height: auto;
 }
 
 .wt-list {
@@ -952,19 +969,19 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
     color: #d65a3b;
 }
 
-.why-tera .btn {
+.why-ind .btn {
     position: relative;
     bottom: 10px;
     font-size: 15px;
 }
 
-.why-tera .red {
+.why-ind .red {
     position: relative;
     left: 0px;
     margin-right: 10px;
 }
 
-.why-tera .btn-2 {
+.why-ind .btn-2 {
     position: relative;
     bottom: 5px;
 }
@@ -979,37 +996,47 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
     font-family: Nunito Sans;
 }
 
-.why-tera h4 {
+.why-ind h4 {
     color: #252e3f;
     font-weight: 600;
     text-transform: uppercase;
     font-size: 15px;
     font-family: Maven Pro;
 }
+.flexbox-start {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-/* why-tera 2 */
+/* why-ind 2 */
 
-.why-tera2 {
+.why-ind2 {
     padding-top: 0;
     padding-bottom: 0;
     background-color: transparent
 }
 
-.why-tera2 .sl1 {
+.why-ind2 .sl1 {
     -webkit-animation-delay: 0s;
     animation-delay: 0s;
     -webkit-animation-duration: .6s;
     animation-duration: .6s
 }
 
-.why-tera2 .sl2 {
+.why-ind2 .sl2 {
     -webkit-animation-delay: .2s;
     animation-delay: .2s;
     -webkit-animation-duration: .6s;
     animation-duration: .6s
 }
 
-.why-tera2 .sl3 {
+.why-ind2 .sl3 {
     -webkit-animation-delay: .4s;
     animation-delay: .4s;
     -webkit-animation-duration: .6s;
@@ -1021,11 +1048,11 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
     right: 80px;
 }
 
-.why-tera2 .default-title {
+.why-ind2 .default-title {
     padding-bottom: 30px
 }
 
-.why-tera2 .box {
+.why-ind2 .box {
     margin: 0;
     border: 0px solid #e0e0e0;
     border-radius: 5px;
@@ -1038,7 +1065,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
     border: 1px solid rgba(200, 200, 200, 0.2)
 }
 
-.why-tera2 .box:hover {
+.why-ind2 .box:hover {
     -webkit-box-shadow: 0px 30px 78px -24px rgba(0, 0, 0, 0.70);
     box-shadow: 0px 30px 78px -24px rgba(0, 0, 0, 0.70)
 }
@@ -1049,13 +1076,13 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
     bottom: 25px
 }
 
-.why-tera2 .btn {
+.why-ind2 .btn {
     position: relative;
     bottom: 10px;
     color: #fff
 }
 
-.why-tera2 .btn-2 {
+.why-ind2 .btn-2 {
     position: relative;
     bottom: 5px;
     left: 5px;
@@ -1070,7 +1097,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
     font-size: 14px
 }
 
-.why-tera2 .wtl-1:before {
+.why-ind2 .wtl-1:before {
     content: "\f2ce ";
     padding: 0 10px 0 0;
     color: #fff;
@@ -1078,7 +1105,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
     font-size: 15px;
 }
 
-.why-tera2 .wtl-2:before {
+.why-ind2 .wtl-2:before {
     content: "\f0c2  ";
     padding: 0 10px 0 0;
     color: #fff;
@@ -1086,7 +1113,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
     font-size: 15px;
 }
 
-.why-tera2 .wtl-3:before {
+.why-ind2 .wtl-3:before {
     content: "\f233";
     padding: 0 10px 0 0;
     color: #fff;
@@ -1094,7 +1121,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
     font-size: 15px;
 }
 
-.why-tera2 .wtl-4:before {
+.why-ind2 .wtl-4:before {
     content: "\f1cd  ";
     padding: 0 10px 0 0;
     color: #fff;
@@ -1102,7 +1129,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
     font-size: 15px;
 }
 
-.why-tera2 .wtl-5:before {
+.why-ind2 .wtl-5:before {
     content: "\f2db";
     padding: 0 10px 0 0;
     color: #fff;
@@ -1110,7 +1137,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
     font-size: 15px;
 }
 
-.why-tera2 .wtl-6:before {
+.why-ind2 .wtl-6:before {
     content: "\f0a0";
     padding: 0 10px 0 0;
     color: #fff;
@@ -1118,7 +1145,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
     font-size: 15px;
 }
 
-.why-tera2 .wtl-7:before {
+.why-ind2 .wtl-7:before {
     content: "\f0ec";
     padding: 0 10px 0 0;
     color: #fff;
@@ -1126,7 +1153,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
     font-size: 15px;
 }
 
-.why-tera2 .wtl-8:before {
+.why-ind2 .wtl-8:before {
     content: "\f1cd";
     padding: 0 10px 0 0;
     color: #fff;
@@ -1134,7 +1161,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
     font-size: 15px;
 }
 
-.why-tera2 .wtl-9:before {
+.why-ind2 .wtl-9:before {
     content: "\f1fc";
     padding: 0 10px 0 0;
     color: #fff;
@@ -1142,7 +1169,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
     font-size: 15px;
 }
 
-.why-tera2 .wtl-10:before {
+.why-ind2 .wtl-10:before {
     content: "\f13b";
     padding: 0 10px 0 0;
     color: #fff;
@@ -1150,7 +1177,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
     font-size: 15px;
 }
 
-.why-tera2 .wtl-11:before {
+.why-ind2 .wtl-11:before {
     content: "\f121";
     padding: 0 10px 0 0;
     color: #fff;
@@ -1158,7 +1185,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
     font-size: 15px;
 }
 
-.why-tera2 .wtl-12:before {
+.why-ind2 .wtl-12:before {
     content: "\f13c";
     padding: 0 10px 0 0;
     color: #fff;
@@ -1166,7 +1193,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
     font-size: 15px;
 }
 
-.why-tera2 h4 {
+.why-ind2 h4 {
     color: #fff;
     font-weight: 600;
     text-transform: uppercase;
@@ -1420,7 +1447,7 @@ body .features2 li::before {
     margin: 0 auto;
     border-style: solid;
     border-width: 0 40px 25px 40px;
-    border-color: transparent transparent #f5633e transparent;
+    border-color: transparent transparent #f7f7f7 transparent;
     position: relative;
     bottom: 25px;
     position: static;
@@ -1735,6 +1762,8 @@ body .features2 li::before {
     background-color: #fff;
     border: 1px solid #e9e9e9;
     width: 250px;
+    min-height: 200px;
+    max-height: 200px;
     height: auto;
     margin: 20px;
     border-bottom: 5px solid #f5633e;
@@ -2388,15 +2417,17 @@ body .features2 li::before {
 /*  ========== HEADERS AND SLIDERS ============ */
 
 /* new header */
-
+.m-0 {
+    margin: 0 !important;
+}
 .new-header {
-    height: 665px;
     background: url(../img/headers/home-image.jpg) center;
     background-size: cover;
+    margin-top: 15px;
 }
 
 .new-header h2 {
-    font-size: 65px;
+    font-size: 45px;
     text-transform: uppercase;
     font-weight: 800;
     color: #03a6d6;
@@ -2408,7 +2439,7 @@ body .features2 li::before {
 }
 
 .new-header .text-content {
-    padding-top: 130px;
+    margin-top: 100px;
 }
 
 .new-header img {
@@ -2956,6 +2987,11 @@ body .h4-animation {
     text-align: left;
 }
 
+.typing-title {
+    box-shadow: inset 0 0 2162px rgb(255 255 255 / 50%);
+    filter: blur(0px);
+}
+
 .home-header .typing-title h2 {
     font-size: 50px;
     font-weight: 800;
@@ -3146,6 +3182,9 @@ body .h4-animation {
     height: 200px;
     background: url(../img/headers/header1.jpg) center;
     background-size: cover;
+}
+.text-center {
+    text-align: center !important;
 }
 
 .header-simple h2 {
@@ -3648,7 +3687,7 @@ body .h4-animation {
 .new-pricing .pricing-n2 {
     text-align: center;
     position: relative;
-    background-color: ##f7f7f7;
+    background-color: #f7f7f7;
     border-top: 6px solid #f5633e;
 }
 
@@ -3735,7 +3774,11 @@ body .h4-animation {
     }
 /* pricing table */
 .text-white {
-    color: #FFFFFF;
+    color: #FFFFFF !important;
+}
+
+.f-30 {
+    font-size: 30px !important;
 }
 .pe-45 {
     padding-left: 45px;
@@ -3749,6 +3792,15 @@ body .h4-animation {
 }
 .mb-2 {
     margin-bottom: 0.5rem !important;
+}
+.mb-4 {
+    margin-bottom: 4rem !important;
+}
+.mb-5 {
+    margin-bottom: 5rem !important;
+}
+.mb-6 {
+    margin-bottom: 6rem !important;
 }
 /* toggle pricing */
 .toggle,
@@ -4494,7 +4546,7 @@ section {
 
 #our-services-default .fa {
     color: #4dd61b;
-    background-color: ##f7f7f7;
+    background-color: #f7f7f7;
     border: 0px solid #e9e9e9;
     width: 70px;
     height: 70px;
@@ -5548,7 +5600,6 @@ body .before_hp h1 {
     font-size: 16px;
     font-weight: 400;
     color: #534654;
-    text-transform: ;
 }
 
 .services6 p {
@@ -6462,7 +6513,7 @@ body .dark {
 
 .onsale {
     padding: 30px 0;
-    background-color: ##f7f7f7;
+    background-color: #f7f7f7;
     margin: 30px 0 0 0;
     text-align: center;
 }

@@ -477,6 +477,7 @@ nav.navbar.bootsnav.no-background {
     position: relative;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    height: 70px !important;
 }
 
 .wrap-sticky nav.navbar.bootsnav {

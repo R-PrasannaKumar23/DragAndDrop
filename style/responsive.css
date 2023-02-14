@@ -968,7 +968,7 @@
         .support-man .default-title h5 {
             text-align: left !important;
         }
-        .why-tera .box {
+        .why-ind .box {
             margin: 0px;
         }
         #page-boxes .fa {
@@ -1001,7 +1001,7 @@
         .web-header .box-container {
             top: 50px;
         }
-        .why-tera {
+        .why-ind {
             padding: 30px 0;
         }
     }
@@ -1072,7 +1072,7 @@
         .s-c-1 .img {
             width: 100%;
         }
-        .why-tera .box {
+        .why-ind .box {
             margin: 0px !important;
         }
         #our-services-default {
@@ -1174,10 +1174,10 @@
             margin-right: 10px;
             background-color: rgba(255, 255, 255, 0.2);
         }
-        .why-tera {
+        .why-ind {
             padding: 50px 0;
         }
-        .why-tera .btn-2 {
+        .why-ind .btn-2 {
             left: 0px;
             bottom: 0px
         }
@@ -1547,7 +1547,7 @@
         .slider-version .col-xs-12 {
             width: 100%;
         }
-        .why-tera .box {
+        .why-ind .box {
             margin: 15px;
         }
         #hosting-parts .part1 h6 {
@@ -1594,7 +1594,7 @@
             width: 100%;
             min-height: 600px;
         }
-        .why-tera .box {
+        .why-ind .box {
             margin: 15px;
         }
         .top-list-right li {
@@ -1865,7 +1865,7 @@
         .parallax .text {
             top: 10px;
         }
-        body .why-tera .red {
+        body .why-ind .red {
             margin-top: 5px;
         }
         #status {
@@ -1970,7 +1970,7 @@
             border: 0px;
             display: none;
         }
-        .why-tera {
+        .why-ind {
             padding: 25px 0px;
         }
         .section-dd-ft2 {
@@ -2213,7 +2213,7 @@
         .default-plans .default-title h3 {
             font-size: 25px;
         }
-        .why-tera2 h4 {
+        .why-ind2 h4 {
             font-size: 15px;
         }
         .default-page-header h2 {
@@ -2690,7 +2690,7 @@
             position: relative;
             bottom: 20px;
         }
-        body .why-tera .btn-2 {
+        body .why-ind .btn-2 {
             left: 0px;
         }
         .slider-version .slide1 h3,
